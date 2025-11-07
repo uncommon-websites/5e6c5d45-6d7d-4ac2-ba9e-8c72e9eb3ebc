@@ -1,7 +1,7 @@
 export const CONFIG = {
-	companyName: "Company",
-	description: "Description",
+	companyName: "Qontext",
+	description: "Unified company context for AI workflows via real-time knowledge graph synchronization",
 	image: "/og.png",
-	url: "https://example.com",
+	url: "https://qontext.ai",
 	fontFamily: "Inter Variable"
 };
