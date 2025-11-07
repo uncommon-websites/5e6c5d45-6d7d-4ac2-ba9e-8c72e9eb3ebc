@@ -21,9 +21,9 @@ A minimalist teaser for the about page.
 
 	// Data
 	const teamMember: TeamMember = {
-		name: "Alex Morgan",
-		role: "Founder & CEO",
-		image: "https://www.unc.mn/image-placeholder.svg"
+		name: "Lorenz Hieber",
+		role: "Co-founder",
+		image: "/generated/image-a-professional-founder-portrait-in-a-mod.webp"
 	};
 </script>
 
@@ -32,7 +32,7 @@ A minimalist teaser for the about page.
 		<div class="relative mx-auto grid max-w-2xl place-items-center gap-16">
 			<ScrollText
 				class="text-title1 text-center"
-				text={`"We're building the future of digital experiences, crafting innovative solutions that transform how people interact with technology in their everyday lives"`}
+				text={`"After five years building AI applications together, we kept hitting the same wall. Every workflow needed different context, every integration was tedious, and scaling felt impossible. We realized the problem wasn't the AI, it was the fragmented context holding it back."`}
 			/>
 
 			<!-- Team Member & CTA Section -->

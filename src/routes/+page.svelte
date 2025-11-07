@@ -7,6 +7,14 @@
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
 	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+
+	// Icons
+	import IconNetwork from "~icons/lucide/network";
+	import IconDatabase from "~icons/lucide/database";
+	import IconRefreshCw from "~icons/lucide/refresh-cw";
+	import IconBrain from "~icons/lucide/brain";
+	import IconZap from "~icons/lucide/zap";
+	import IconShieldCheck from "~icons/lucide/shield-check";
 </script>
 
 <Hero
@@ -26,62 +34,97 @@
 />
 
 <Summary
-	generating
 	title="What we do"
-	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
+	text="Qontext transforms your fragmented data across CRM, documents, and communications into a unified knowledge graph that powers every AI workflow. RevOps teams at digital scale-ups use our real-time synchronization to eliminate manual prompt updates and scale AI operations from ten workflows to hundreds without engineering overhead."
 />
 
 <Testimonials
-	generating
 	testimonials={[
 		{
-			name: "Jane Smith",
+			name: "Marcus Chen",
 			position: "CTO",
-			company: "Tech Innovations",
+			company: "Stealth AI Startup",
 			quote:
-				"Their cutting-edge automation boosted our productivity by 35%.\nThe intuitive interface reduced training time and improved team adoption.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"Qontext reduced our engineering overhead dramatically. We went from zero to one in days, not months. The unified context layer eliminated weeks of integration work and let our team focus on building product instead of maintaining data pipelines.",
+			image: "/generated/image-a-professional-asian-male-cto-age-30-45-.webp"
 		},
 		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
+			name: "Aisha Williams",
+			position: "Head of Revenue Operations",
+			company: "Tacto",
 			quote:
-				"Their robust security protocols gave us confidence in handling sensitive data.\nThe 24/7 support team resolved issues within hours, not days.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"Our go-to-market workflows are finally on autopilot. Thanks to Qontext, prompts stay automatically up to date across all our AI processes. We've saved 15+ hours per week that used to go into manual prompt engineering and data syncing.",
+			image: "/generated/image-a-confident-black-female-operations-lead.webp"
 		},
 		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
+			name: "Henrik Lindström",
+			position: "Senior AI Engineer",
+			company: "Flink",
 			quote:
-				"The scalable platform grew seamlessly with our business needs.\nTheir customization options allowed us to tailor solutions perfectly to our workflows.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"Maintaining context across ten workflows was manageable, but not scalable. As AI expanded across our organization, Qontext provided a single, up-to-date hub that powers them all. It's the difference between chaos and orchestrated efficiency.",
+			image: "/generated/image-a-professional-caucasian-male-senior-eng.webp"
 		}
 	]}
 />
 
 <Features
-	generating
-	title="Features"
-	subtitle="Some features"
+	title="Platform capabilities"
+	subtitle="Unified context infrastructure that eliminates data silos and powers accurate AI workflows at scale"
 	features={[
 		{
-			title: "Streamlined Workflows",
+			title: "Knowledge graph synchronization",
 			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings."
+				"Automatically structure and link data from CRM, documents, conversations, and email to reveal relationships your AI needs. Real-time synchronization ensures your context stays fresh without manual updates.",
+			icon: IconNetwork
 		},
 		{
-			title: "Data Analysis",
+			title: "Unified context API",
 			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors."
+				"Single source of truth that powers all your AI workflows through one API. Scale from ten workflows to hundreds without fragmentation or engineering overhead.",
+			icon: IconDatabase
 		},
 		{
-			title: "Secure Collaboration",
+			title: "Real-time data structuring",
 			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption."
+				"Transform raw data into organized, linked context automatically. No tedious integrations or constant prompt engineering required.",
+			icon: IconRefreshCw
+		},
+		{
+			title: "Context-aware AI operations",
+			description:
+				"Your AI finally understands your business without manual prompt updates. Accurate, reliable operations that adapt as your data changes.",
+			icon: IconBrain
+		},
+		{
+			title: "Zero-friction integration",
+			description:
+				"Connect HubSpot, Notion, Google Drive, and workflow builders in minutes. Go from zero to production AI in days, not months.",
+			icon: IconZap
+		},
+		{
+			title: "Granular access control",
+			description:
+				"Enterprise-grade security with transparent, granular permissions. Control exactly what context each workflow can access.",
+			icon: IconShieldCheck
 		}
 	]}
 />
-<AboutTeaser generating />
-<CallToAction generating />
+<AboutTeaser />
+<CallToAction
+	title="Stop losing time to fragmented context"
+	subtitle="Start scaling AI workflows in days, not months"
+	description="While your competitors scale AI operations, are you still manually updating prompts and fighting data silos? Join forward-thinking RevOps teams who eliminated engineering overhead and went from ten workflows to hundreds with unified context infrastructure."
+	imageSrc="/generated/image-a-confident-operations-professional-age-.webp"
+	callsToAction={[
+		{
+			href: "#get-started",
+			label: "See Qontext in action",
+			variant: "primary"
+		},
+		{
+			href: "#contact",
+			label: "Talk to our team",
+			variant: "secondary"
+		}
+	]}
+/>
